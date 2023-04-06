@@ -42,15 +42,6 @@ main img {
   flex-direction: column;
 }
 
-.item {
-  flex: 1;
-  margin: 10px;
-}
-
-.item-double {
-  flex: 2;
-}
-
 .space-between {
   justify-content: space-between;
 }
@@ -139,10 +130,94 @@ footer p {
 /* -------  Media Query ------- */
 
 @media all and (min-width: 480px) {
-  /*header {
+  header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 15px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+
+  form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  form div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*form div, form button {
+    width: 20%;
   }*/
+
+  form button, form label {
+    font-size: 12px;
+  }
+
+  form input, form select {
+    width: 50%;
+    font-size: 10px;
+  }
+
+  /*#about img {
+    object-fit: contain;
+  }*/
+
+  form button {
+    font-size: 18px;
+  }
+
+  form label {
+    color: #000000;
+  }
+
+  .item {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .item-double {
+    flex: 2;
+  }
+
+  img {
+    width: 100%;
+  }
+
+ /* #about img {
+    flex: 1;
+  }*/
+
+ /* #about p {
+    flex: 2;
+  }*/
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .contain {
+    object-fit: contain;
+  }
+
+  
+  
+
+  /* The code below was suggested.
+
   header {
     display: flex;
     align-items: center;
@@ -170,7 +245,7 @@ footer p {
     font-size: 12px; 
   }
   /*----group adjustments---*/
-.group { 
+/*.group { 
   flex-direction: row; 
   align-items:center; 
 }
@@ -190,7 +265,6 @@ footer p {
 }
 .hosting{ 
   flex:1; 
+}*/
 }
-}
-
 
