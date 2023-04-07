@@ -185,14 +185,30 @@ footer p {
   .item {
     flex: 1;
     margin: 10px;
+    flex-direction: row;
+    align-items: center;
   }
 
   .item-double {
     flex: 2;
+    flex-direction: row;
+    align-items: center;
   }
 
   img {
     width: 100%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto auto;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
   }
 
  /* #about img {
@@ -209,9 +225,20 @@ footer p {
     width: 100%;
   }
 
+  .central {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+  }
+
   .contain {
     object-fit: contain;
   }
+
+ /* #about {
+    width: 50%;
+  }*/
 
   
   
